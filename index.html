@@ -41,12 +41,12 @@
             padding: 30px 20px 10px;
         }
 
-        /* Contenedor del logo con efecto circular */
+        /* AJUSTE DE LOGO: Zoom y centrado perfecto */
         .logo-container {
             width: 180px;
             height: 180px;
             margin: 0 auto 15px;
-            background: #fff; 
+            background: #fdf6e4; /* Color crema exacto del fondo del logo */
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -58,8 +58,9 @@
 
         .logo-container img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            transform: scale(1.6); /* Zoom para eliminar bordes vacíos de la foto */
+            display: block;
         }
 
         h1 {
@@ -67,6 +68,7 @@
             margin: 10px 0;
             font-size: 1.8rem;
             letter-spacing: 1px;
+            font-weight: 700;
         }
 
         .location {
