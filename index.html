@@ -46,7 +46,7 @@
             width: 180px;
             height: 180px;
             margin: 0 auto 15px;
-            background: #98d8ef; /* Azul del fondo del logo original */
+            background: #fff; 
             border-radius: 50%;
             border: 5px solid white;
             box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -58,7 +58,8 @@
 
         .logo-container img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
@@ -122,7 +123,6 @@
 
         #subscription-shield { display: none; }
 
-        /* Responsive */
         @media (max-width: 350px) {
             .card { border-radius: 0; }
             h1 { font-size: 1.5rem; }
@@ -134,7 +134,7 @@
 <div class="card" id="main-card">
     <div class="header">
         <div class="logo-container">
-            <img src="Screenshot_20260327_195037_Instagram.jpgo" alt="Pan Comido Logo">
+            <img src="Screenshot_20260327_195037_Instagram.jpg" alt="Pan Comido Logo">
         </div>
         <h1>PAN COMIDO</h1>
         <div class="location">
@@ -172,7 +172,6 @@
 </div>
 
 <script>
-    // CONTROL INVISIBLE DE SUSCRIPCIÓN POR FECHA
     (function() {
         const expirationDate = new Date(document.getElementById('subscription-shield').innerText);
         const today = new Date();
